@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="color.js"></script>
+	<link rel="stylesheet" type="text/css" href="color.css">
+	<title>The Great RGB Guessing Game</title>
+</head>
+<body>
+<header>
+	<h1>The Great <span id="picked"></span> Guessing Game</h1>
+</header>
+<main>
+<div id="control-panel">
+		<button id="reset">New Colors</button>
+		<div id="message"></div>
+		<button id="easy">Easy</button>
+		<button id="hard" class="active">Hard</button>
+	</div>
+<div id="container">
+	<div class="square top"></div>
+	<div class="square top"></div>
+	<div class="square top"></div>
+	<div class="square bottom"></div>
+	<div class="square bottom"></div>
+	<div class="square bottom"></div>
+</div>
+</main>
+<footer>
+	<p>Adapted from the Javascript version in the <a href="https://www.udemy.com/the-web-developer-bootcamp/learn/v4/overview">Web Developer Bootcamp</a></p>
+	<a href="http://vwren.com">By V.Wren</a>
+</footer>
+</body>
+</html>

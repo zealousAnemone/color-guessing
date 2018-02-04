@@ -1,0 +1,66 @@
+body {
+	background-color: #232323;
+}
+
+
+header {
+	text-align: center;
+	color: white;
+	height: 160px;
+	padding-top: 40px;
+}
+
+#control-panel {
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+	height: 2.4em;
+	padding-bottom: 9px;
+	margin-bottom: 40px;
+	text-align: center;
+	color: white;
+	
+}
+
+button {
+	background-color: #232323;
+	color: white;
+	font-size: 1.2em;
+	border: none;
+	padding: 12px;
+}
+
+#message {
+	display: inline-block;
+	min-width: 80px;
+	font-size: 1.2em;
+}
+
+.active {
+	background-color: white;
+	color: black;
+}
+
+h1 {
+	font-size: 3em;
+}
+.square {
+	width: 30%;
+	float: left;
+	padding-bottom: 30%;
+	margin: 1.66%;
+	border-radius: 20%;
+}
+
+#container {
+	max-width: 600px;
+	margin: 0 auto;
+	height: 80vh;
+}
+
+footer {
+	text-align: center;
+	display:block;
+	clear:both;
+	padding: 30px;
+	background-color: white;
+}
