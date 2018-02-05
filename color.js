@@ -5,35 +5,34 @@ randomColors();
 var pickedColor = pickColor();
 $("#picked").text(pickedColor.toUpperCase());
 
+
 $("#reset").click(function() {
+	reset();
+		
+})
+
+$("#easy").click(function() {
+	$(this).addClass("active");
+	$("#hard").removeClass("active");
+	easy = true;
+	$(".bottom").css("background-color", "#232323");
+	reset();
+})
+
+$("#hard").click(function() {
+	$(this).addClass("active");
+	$("#easy").removeClass("active");
+	easy = false;
+	reset();
+})
+
+function reset() {
 	randomColors();
 	pickedColor = pickColor();
 	$("#picked").text(pickedColor.toUpperCase());
 	$("header").css("background-color", "#232323");
 	$("#message").empty();
-})
-
-$("#easy").click(function() {
-	$("header").css("background-color", "#232323");
-	$(this).addClass("active");
-	$("#hard").removeClass("active");
-	easy = true;
-	$(".square").css("background-color", "#232323");
-	randomColors();
-	console.log(colors.length);
-	pickedColor = pickColor();
-	$("#picked").text(pickedColor.toUpperCase());
-})
-
-$("#hard").click(function() {
-	$("header").css("background-color", "#232323");
-	$(this).addClass("active");
-	$("#easy").removeClass("active");
-	easy = false;
-	randomColors();
-	pickedColor = pickColor();
-	$("#picked").text(pickedColor.toUpperCase());
-})
+}
 
 function randomColors() {
 colors = [];
